@@ -10,8 +10,9 @@ async function startServer() {
   const app = express();
   const server = createServer(app);
 
-  // Serve static files from the built `dist` directory (Vercel builds the project before running this server)
-  const staticPath = path.resolve(__dirname, "..", "dist");
+  // esbuild compiles this file to dist/index.js → __dirname = dist/
+  // Vite builds the frontend to dist/public → static path is always dist/public
+  const staticPath = path.resolve(__dirname, "public");
 
   app.use(express.static(staticPath));
 
