@@ -1,4 +1,4 @@
-# Web App Template (Static Frontend)
+# Web App Template (Static Frontend) 
 
 Pure React 19 + Tailwind 4 template with shadcn/ui baked in. **Use this README as the checklist for shipping static experiences.**
 
