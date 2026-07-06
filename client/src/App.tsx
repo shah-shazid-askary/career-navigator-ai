@@ -39,7 +39,7 @@ function App() {
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
-  );
+  ); 
 }
 
 export default App;
